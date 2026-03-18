@@ -1,0 +1,5 @@
+{
+  "name": "Top 1% Resume Optimizer",
+  "description": "A web application that uses AI to analyze your resume, provide an ATS score, and offer line-by-line actionable feedback to help you land top-tier jobs.",
+  "requestFramePermissions": []
+}
