@@ -24,7 +24,7 @@ export async function analyzeResume(resumeText: string, customApiKey?: string): 
   const ai = new GoogleGenAI({ apiKey });
 
   const response = await ai.models.generateContent({
-    model: 'gemini-3.1-pro-preview',
+    model: 'gemini-2.5-pro',
     contents: `Analyze the following resume text and provide a "Top 1% Resume Optimizer" analysis.
 
 Resume Text:

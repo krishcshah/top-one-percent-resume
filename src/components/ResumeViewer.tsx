@@ -125,17 +125,17 @@ export function ResumeViewer({ file, pdfData, highlights }: Props) {
   );
 }
 
-function PdfPageOverlay({
-  pageNum,
-  pdfData,
-  highlights,
-  onHoverHighlight,
-}: {
+const PdfPageOverlay: React.FC<{
   pageNum: number;
   pdfData: PdfDocumentData;
   highlights: Highlight[];
   onHoverHighlight: (h: Highlight | null) => void;
-}) {
+}> = ({
+  pageNum,
+  pdfData,
+  highlights,
+  onHoverHighlight,
+}) => {
   const [pageDetails, setPageDetails] = useState<{ width: number; height: number; viewport: any } | null>(null);
 
   const onPageLoadSuccess = (page: any) => {
@@ -148,7 +148,7 @@ function PdfPageOverlay({
     });
   };
 
-  const overlays: JSX.Element[] = [];
+  const overlays: React.ReactNode[] = [];
 
   if (pageDetails) {
     const { viewport } = pageDetails;
