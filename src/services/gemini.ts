@@ -31,16 +31,18 @@ Resume Text:
 ${resumeText}
 
 Instructions:
-1. Calculate an ATS Score (0-100) based on keyword density, formatting, and industry standards.
+1. Calculate an ATS Score (0-100) based on keyword density, formatting, and industry standards. (Keep the scoring realistic and balanced, do not become overly strict).
 2. Provide a "Brutal Honesty" Executive Conclusion: a candid, critical summary of the candidate's marketability.
 3. Identify exactly 3 "Must-Fix" priority items.
-4. Identify specific lines or phrases in the text to highlight. For each highlight, provide:
+4. Identify specific lines or phrases in the text to highlight. You MUST provide AT LEAST 10 highlights (aim for 10-15) to give the user plenty of actionable feedback. Be highly critical and thorough, finding every possible area for improvement. For each highlight, provide:
    - textToHighlight: The EXACT substring from the resume text (must match exactly).
    - color: "green" (high-impact, quantifiable achievements), "yellow" (minor issues like "too wordy"), or "red" (critical errors like "missing contact info", "weak action verbs").
    - before: The original text (or a summary of the issue if it's a missing thing).
    - after: A suggested improvement.
    - explanation: A brief explanation of the "why" based on elite recruiting practices.
    
+CRITICAL CONTEXT: The current year is 2026. Do NOT flag dates like 2024, 2025, or 2026 as being "in the future" or invalid. Accept them as valid past or present dates.
+
 Ensure the highlights cover a mix of green, yellow, and red items if applicable. Keep the textToHighlight relatively short (a sentence or phrase) so it can be easily found in the text.`,
     config: {
       responseMimeType: 'application/json',
